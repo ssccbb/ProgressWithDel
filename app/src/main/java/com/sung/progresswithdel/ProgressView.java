@@ -116,6 +116,9 @@ public class ProgressView extends View {
         final int width = getMeasuredWidth(), height = getMeasuredHeight();
         int left = 0, right = 0, duration = 0;
         if (mMediaObject != null && mMediaObject.getMediaParts() != null) {
+
+            left = right = 0;
+
             // final int duration = vp.getDuration();
             int maxDuration = mMaxDuration;
             boolean hasOutDuration = false;
