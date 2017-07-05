@@ -113,7 +113,6 @@ public class ProgressView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         final int width = getMeasuredWidth(), height = getMeasuredHeight();
         int left = 0, right = 0, duration = 0;
         if (mMediaObject != null && mMediaObject.getMediaParts() != null) {
