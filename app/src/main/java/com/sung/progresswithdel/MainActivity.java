@@ -160,10 +160,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        READY_TO_DELETE = true;
+
         logText.append("delete begain...");
         mediaObject.getMediaParts().remove(mediaObject.getMediaParts().get(mediaObject.getMediaParts().size() - 1));
         logText();
+        cancelDelete();
     }
 
     private void cancelDelete(){
