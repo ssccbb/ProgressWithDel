@@ -110,59 +110,9 @@ public class ProgressView extends View {
         }
     };
 
-//    long lastTime = 0;
-//    int right = 0;
-//    boolean draw_status = false;
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-//        final int width = getMeasuredWidth(), height = getMeasuredHeight();
-//        int left = 0, duration = 0;
-//
-//        //画已有数据
-//        if (mMediaObject != null && mMediaObject.getMediaParts() != null && !draw_status){
-//            for (int i = 0; i < mMediaObject.getMediaParts().size(); i++) {
-//                MediaObject.MediaPart part = mMediaObject.getMediaParts().get(i);
-//                right = right +(int) (part.duration * 1.0F / mMaxDuration *width);
-//                canvas.drawRect(left, 0.0f, right, height, mProgressPaint);
-//                canvas.drawRect(right-10, 0.0f, right, height, mOverflowPaint);
-//                left = right;
-//            }
-//            draw_status = true;
-//        }
-//
-//        if (mStart) {
-//            if ((System.currentTimeMillis() - lastTime) > 1000){
-//                Log.e("ProgressView", "onDraw: "+System.currentTimeMillis() );
-//                lastTime = System.currentTimeMillis();
-//
-//                right = right + (int) (1000 * 1.0F / mMaxDuration * width);//+1s
-//                if (right >= width)
-//                    right = width;
-//            }
-////            Log.e("ProgressView", "onDraw: "+right +" - mMaxDuration "+mMaxDuration+" - width "+width+" - time "+System.currentTimeMillis());
-//        }
-//        canvas.drawRect(left, 0.0f, right, height, mProgressPaint);
-//
-//        if (!mStart){
-//            //canvas.drawRect(right-10, 0.0f, right, height, mOverflowPaint);
-//        }
-//
-//        // 画三秒
-//        if (duration < mRecordTimeMin) {
-//            left = (int) ((mRecordTimeMin*1.0f )/ mMaxDuration * width);
-//            canvas.drawRect(left, 0.0F, left + mVLineWidth, height, mThreePaint);
-//        }
-//
-//        // 删
-//        //
-//        // 闪
-//        if (mActiveState) {
-//            if (right + 8 >= width)
-//                right = width - 8;
-//            canvas.drawRect(right, 0.0F, right + 8, getMeasuredHeight(),
-//                    mActivePaint);
-//        }
 
         final int width = getMeasuredWidth(), height = getMeasuredHeight();
         int left = 0, right = 0, duration = 0;
